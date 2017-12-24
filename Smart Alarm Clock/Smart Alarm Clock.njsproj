@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascripts\alarm.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\javascripts\time.js">
       <SubType>Code</SubType>
     </Compile>
