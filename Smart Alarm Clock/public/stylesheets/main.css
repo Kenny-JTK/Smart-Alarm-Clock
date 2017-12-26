@@ -1,14 +1,18 @@
-﻿body {
+﻿@font-face {
+    font-family: 'digital-clock-font';
+    src: url('digital-7.ttf');
+}
+
+body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color:#000000;
 }
 
 a {
-    font-size:30px;
+    font-size:20px;
     color:green;
 }
-
 
 #Time {
     font-size:150px;
@@ -35,10 +39,10 @@ a {
     position: absolute;
     cursor: pointer;
     top: 4px;
-    left: 4px;
-    right: -4px;
+    left: 0px;
+    right: 0px;
     bottom: -4px;
-    background-color: #ccc;
+    background-color: #777;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -52,7 +56,7 @@ a {
     left: 4px;
     right: 0;
     bottom: 0;
-    background-color: white;
+    background-color: #ddd;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -72,6 +76,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
+    background-color: #777;
     border-radius: 34px;
 }
 

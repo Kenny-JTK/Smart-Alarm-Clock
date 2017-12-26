@@ -1,20 +1,45 @@
 ﻿extends layout
 
 block content
-    <table border="2" width="100%">
-        <tr>
-            <td align="center"><a data-toggle="collapse" data-target="#alarms"> Alarms</a></td>
-                
-        <tr id="alarms" class="collapse">
-            <td> 
+    <table border="0" width="100%" >                
+        <tr id="alarms" class="collapse.in">
+            <td width="80px" align="left" v-align="center"> 
                 <label class="switch">
-                  <input type="checkbox" id="Alarm1" onclick="myAlarm()">
+                  <input type="checkbox" id="Alarm1">
                   <span class="slider round"></span>
-                </label>
-
+                </label>   
+            <td width="160px" align="center">
+                <div class="input-group clockpicker">
+                    <input type="text" id="Time1" class="form-control" value="">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+                <script type="text/javascript">$('.clockpicker').clockpicker();</script>
+            <td width="100%" align="center">
+            <td width="160px" align="center">
+                <div class="input-group clockpicker">
+                    <input type="text" id="Time2" class="form-control" value="">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+                <script type="text/javascript">$('.clockpicker').clockpicker();</script>
+            <td width="80px" align="right"> 
+                <label class="switch">
+                  <input type="checkbox" id="Alarm2">
+                  <span class="slider round"></span>
+                </label>   
+        <tr>
+            <td colspan="5"><div id="Time" align="center"></div>
+        <tr>
+            <td colspan="5"><div id="Day" align="center"></td>  
     
-        <tr>
-            <td><div id="Time" align="center" size="20"></div>
-        <tr>
-            <td><div id="Day" align="center" size ="20"></td>
-            
+    
+    <table border="2" width="100%">
+        <tr height="50px">
+            <td width="20%" align="center"> </td>
+            <td width="20%" align="center"> </td>
+            <td width="20%" align="center"><a data-toggle="collapse" data-target="#alarms"> Alarms</a></td>      
+            <td width="20%" align="center"> </td>
+            <td width="20%" align="center"> </td>
