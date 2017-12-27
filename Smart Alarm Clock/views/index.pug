@@ -1,7 +1,7 @@
 ﻿extends layout
 
 block content
-    <table border="0" width="100%" >                
+    <table border="0" width="100%" style="height:90vh">                
         <tr id="alarms" class="collapse.in">
             <td width="80px" align="left" v-align="center"> 
                 <label class="switch">
@@ -15,7 +15,7 @@ block content
                         <span class="glyphicon glyphicon-time"></span>
                     </span>
                 </div>
-                <script type="text/javascript">$('.clockpicker').clockpicker();</script>
+                <script type="text/javascript">$('.clockpicker').clockpicker({align: 'left'});</script>
             <td width="100%" align="center">
             <td width="160px" align="center">
                 <div class="input-group clockpicker">
@@ -24,7 +24,7 @@ block content
                         <span class="glyphicon glyphicon-time"></span>
                     </span>
                 </div>
-                <script type="text/javascript">$('.clockpicker').clockpicker();</script>
+                <script type="text/javascript">$('.clockpicker').clockpicker({align: 'right'});</script>
             <td width="80px" align="right"> 
                 <label class="switch">
                   <input type="checkbox" id="Alarm2">
@@ -34,12 +34,13 @@ block content
             <td colspan="5"><div id="Time" align="center"></div>
         <tr>
             <td colspan="5"><div id="Day" align="center"></td>  
-    
-    
-    <table border="2" width="100%">
+        <script type="text/javascript">$.getJSON("./settings/config.json", function (data) {var audio = document.createElement('audio');audio.style.display="none";audio.id="webradio";audio.src=data.webradio;document.body.appendChild(audio); });</script>
+    <div id="buttons">   
+    <table border="2" width="100%" margin="0" padding="0" >
         <tr height="50px">
-            <td width="20%" align="center"> </td>
-            <td width="20%" align="center"> </td>
-            <td width="20%" align="center"><a data-toggle="collapse" data-target="#alarms"> Alarms</a></td>      
-            <td width="20%" align="center"> </td>
-            <td width="20%" align="center"> </td>
+            <td width="20%" align="center"> <a href="javascript:void(0)" onclick="button_left()"><div id="Button_left"></div></a></td>
+            <td width="20%" align="center"> <a data-toggle="collapse" data-target="#alarms"><div id="Button2">Alarms</div></a></td>
+            <td width="20%" align="center"> <a href="javascript:void(0)" onclick="button_center()"><div id="Button_center"></div></a> </td>      
+            <td width="20%" align="center"> <a href="javascript:void(0)" onclick="toggleRadio()"><div id="Button4"></div></a></td>
+            <td width="20%" align="center"> <a href="javascript:void(0)" onclick="button_right()"><div id="Button_right"></div></a> </td>
+    </div>

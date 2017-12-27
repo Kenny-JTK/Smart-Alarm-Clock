@@ -1,16 +1,25 @@
 ﻿{
- 
-    "AL_1ifttt": "https://maker.ifttt.com/trigger/test/with/key/40eJ5t_88R2EXZCYHeAUcIZkCnuGZJTIC16dXQGGys",
-    "AL_1value1": "1",
-    "AL_1value2": "2",
-    "AL_1value3": "3",
-    "AL_1webradio": "",
-  
-    "AL_2ifttt": "https://maker.ifttt.com/trigger/test/with/key/40eJ5t_88R2EXZCYHeAUcIZkCnuGZJTIC16dXQGGys",
-    "AL_2value1": "1",
-    "AL_2value2": "2",
-    "AL_2value3": "3",
-    "AL_2webradio": ""
-  
+
+  "AL_1ifttt": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "AL_1value1": "1",
+  "AL_1value2": "2",
+  "AL_1value3": "3",
+
+  "AL_2ifttt": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "AL_2value1": "1",
+  "AL_2value2": "2",
+  "AL_2value3": "3",
+
+  "webradio": "http://icecast-qmusic.cdp.triple-it.nl/JOEfm_be_live_128.mp3",
+  "fadeTime": "6000",
+
+  "button_left": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "button_left_caption": "Left",
+
+  "button_center": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "button_center_caption": "Center",
+
+  "button_right": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "button_right_caption": "Right"
 
 }

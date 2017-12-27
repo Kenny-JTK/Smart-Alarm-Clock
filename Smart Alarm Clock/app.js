@@ -8,12 +8,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var config1 = require("./settings/config.json")
 var app = express();
-var jsondb = require('node-json-db');
-var settings = new jsondb("./settings/settings", true, false);
 
-settings.push('/config', config1,true);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
