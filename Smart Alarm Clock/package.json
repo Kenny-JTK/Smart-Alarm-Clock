@@ -1,7 +1,7 @@
 {
   "name": "smart-alarm-clock",
   "url": "https://github.com/Kenny-JTK/Smart-Alarm-Clock",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "private": false,
   "scripts": {
     "start": "node app"
@@ -10,7 +10,7 @@
   "author": {
     "name": "K.Stoepel"
   },
-  "keywords": [ "Node", "Smart", "alarm", "clock", "ifttt", "iot" ],
+  "keywords": [ "Node", "Smart", "alarm", "clock", "ifttt", "iot","webhook" ],
   "repository": "https://github.com/Kenny-JTK/Smart-Alarm-Clock",
   "dependencies": {
     "body-parser": "^1.15.0",

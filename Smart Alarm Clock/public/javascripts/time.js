@@ -82,7 +82,7 @@ function startTime() {
     //early trigger
     if (config.early_trigger != "" && checkBox1.checked == true || config.early_trigger != "" && checkBox2.checked == true) {
         var offset = [];
-        offset[0] = math.floor(config.early_offset / 60);
+        offset[0] = Math.floor(config.early_offset / 60);
         offset[1] = config.early_offset - (offset[0] * 60);
         var alarmTime1 = (document.getElementById('Time1').value).split(":");
         var alarmTime2 = (document.getElementById('Time2').value).split(":");
@@ -141,11 +141,11 @@ function toggleRadio() {
 
     if (Audio.duration > 0 && !Audio.paused) {
         //is playing
-        document.getElementById('webradio').pause();
+        Audio.pause();
         document.getElementById('Button4').innerHTML = "Play Radio";
     } else {
         //is paused
-        document.getElementById('webradio').play();
+        Audio.play();
         document.getElementById('Button4').innerHTML = "Stop Radio";
     }
 }
