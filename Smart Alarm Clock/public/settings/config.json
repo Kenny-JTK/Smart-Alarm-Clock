@@ -20,6 +20,12 @@
   "button_center_caption": "Center",
 
   "button_right": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
-  "button_right_caption": "Right"
+  "button_right_caption": "Right",
+
+  "early_trigger": "https://maker.ifttt.com/trigger/{Your-Event}/with/key/{Your-Key}",
+  "early_offset": "1",
+  "early_value1": "",
+  "early_value2": "",
+  "early_value3": ""
 
 }
