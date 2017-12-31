@@ -22,7 +22,7 @@ if you like to contribute, please do.
 
 Configuration :
 
--all settings can be made in settings/config.json
+-all settings can be made in public/settings/config.json
 -Copy your IFTTT or other webhook links to the config.json file and add up to 3 value to be passed in the webhook POST.
 -for the radio there is only 1 url for both alarms
 -the webradio_fadetime is expressed in ms -> 1s=1000ms

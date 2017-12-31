@@ -29,8 +29,8 @@ function startTime() {
 
     //var Days = config.Days;
     //var Months = config.Months;
-    var Days = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
-    var Months = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"];
+    var Days = config.Days;
+    var Months = config.Months;
     //console.log(Days);
     document.getElementById('Day').innerHTML = Days[today.getDay()] + " " + today.getDate() + " " + Months[today.getMonth()] + " " + today.getFullYear();
 
