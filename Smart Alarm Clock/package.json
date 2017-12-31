@@ -1,7 +1,7 @@
 {
   "name": "smart-alarm-clock",
   "url": "https://github.com/Kenny-JTK/Smart-Alarm-Clock",
-  "version": "0.5.4",
+  "version": "0.5.6",
   "private": false,
   "scripts": {
     "start": "node app"

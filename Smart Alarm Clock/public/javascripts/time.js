@@ -51,9 +51,10 @@ function startTime() {
                 });
                 
             // Start Music
-            document.getElementById('webradio').volume=0.2;
+            document.getElementById('webradio').volume = 0.2;
+            document.getElementById('webradio').src = config.webradio;
             document.getElementById('webradio').play();
-            document.getElementById('Button1').innerHTML = "Stop Radio";
+            document.getElementById('Button4').innerHTML = "Stop Radio";
             fade(config.fadeTime);
             
          };
