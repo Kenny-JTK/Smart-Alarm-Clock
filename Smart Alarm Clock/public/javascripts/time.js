@@ -73,6 +73,7 @@ function startTime() {
                    
             // Start Music
             document.getElementById('webradio').volume = 0.2;
+            document.getElementById('webradio').src = config.webradio;
             document.getElementById('webradio').play();
             document.getElementById('Button4').innerHTML = "Stop Radio";
             fade(config.fadeTime);
@@ -142,9 +143,11 @@ function toggleRadio() {
     if (Audio.duration > 0 && !Audio.paused) {
         //is playing
         Audio.pause();
+        Audio.src = "";
         document.getElementById('Button4').innerHTML = "Play Radio";
     } else {
         //is paused
+        Audio.src = config.webradio;
         Audio.play();
         document.getElementById('Button4').innerHTML = "Stop Radio";
     }
