@@ -1,6 +1,6 @@
 ﻿# Smart Alarm Clock
 
-IFTTT smart alarm clock private
+IFTTT smart alarm clock private 2
 
 2 seperate alarm timers with andriod style time picker
 plays webradio/stream/mp3 and send out a IFTTT trigger (webhooks) at alarm time so you can do whatever you want on the other side.
