@@ -26,6 +26,9 @@
   "early_offset": "1",
   "early_value1": "",
   "early_value2": "",
-  "early_value3": ""
+  "early_value3": "",
+
+  "Days" : [ "Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag" ],
+  "Months" : [ "Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December" ]
 
 }

@@ -29,8 +29,8 @@ function startTime() {
 
     //var Days = config.Days;
     //var Months = config.Months;
-    var Days = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
-    var Months = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"];
+    var Days = config.Days;
+    var Months = config.Months;
     //console.log(Days);
     document.getElementById('Day').innerHTML = Days[today.getDay()] + " " + today.getDate() + " " + Months[today.getMonth()] + " " + today.getFullYear();
 
@@ -51,9 +51,10 @@ function startTime() {
                 });
                 
             // Start Music
-            document.getElementById('webradio').volume=0.2;
+            document.getElementById('webradio').volume = 0.2;
+            document.getElementById('webradio').src = config.webradio;
             document.getElementById('webradio').play();
-            document.getElementById('Button1').innerHTML = "Stop Radio";
+            document.getElementById('Button4').innerHTML = "Stop Radio";
             fade(config.fadeTime);
             
          };
@@ -73,6 +74,7 @@ function startTime() {
                    
             // Start Music
             document.getElementById('webradio').volume = 0.2;
+            document.getElementById('webradio').src = config.webradio;
             document.getElementById('webradio').play();
             document.getElementById('Button4').innerHTML = "Stop Radio";
             fade(config.fadeTime);
@@ -82,7 +84,7 @@ function startTime() {
     //early trigger
     if (config.early_trigger != "" && checkBox1.checked == true || config.early_trigger != "" && checkBox2.checked == true) {
         var offset = [];
-        offset[0] = math.floor(config.early_offset / 60);
+        offset[0] = Math.floor(config.early_offset / 60);
         offset[1] = config.early_offset - (offset[0] * 60);
         var alarmTime1 = (document.getElementById('Time1').value).split(":");
         var alarmTime2 = (document.getElementById('Time2').value).split(":");
@@ -141,11 +143,13 @@ function toggleRadio() {
 
     if (Audio.duration > 0 && !Audio.paused) {
         //is playing
-        document.getElementById('webradio').pause();
+        Audio.pause();
+        Audio.src = "";
         document.getElementById('Button4').innerHTML = "Play Radio";
     } else {
         //is paused
-        document.getElementById('webradio').play();
+        Audio.src = config.webradio;
+        Audio.play();
         document.getElementById('Button4').innerHTML = "Stop Radio";
     }
 }
